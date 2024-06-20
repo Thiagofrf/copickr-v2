@@ -1,0 +1,40 @@
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: transparent;
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        a {
+            color: #c1121e91;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 6px 12px;
+            border-radius: 10px;
+            transition: .2s ease-in-out;
+
+            &:hover {
+                background: #002f4925;
+                color: #C1121F;
+            }
+
+            &.signup-button {
+                background: #002f49ab;
+                color: #ffffffe8;
+
+                &:hover {
+                    background: #003049;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
