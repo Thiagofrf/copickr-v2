@@ -1,0 +1,60 @@
+main {
+    text-align: center;
+    height: 100vh;
+    background: #fdf0d596;
+    
+    h1 {
+        padding-top: 6rem;
+        font-size: 4rem;
+        color: #003049;
+    }
+
+    p {
+        margin: 10px auto;
+        max-width: 65%;
+        font-size: 22px;
+        color: #003049;
+        font-weight: 300;
+    }
+
+    .main_buttons { 
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+
+        &--item {
+            font-size: 20px;
+            padding: 12px 20px;
+            text-decoration: none;
+            transition: .2s ease-in-out;
+            color: #000;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            &__signup {
+                background: #003049;
+                color: #fff;
+                
+                &:hover {
+                    background: #005d8f;
+                }
+            }
+
+            &:not(&__signup) {
+                background: #00000000;
+
+                &:hover {
+                    background: #00000011;
+                }
+            }
+        }
+    }
+
+    img {
+        margin-top: 20px;
+    }
+}
