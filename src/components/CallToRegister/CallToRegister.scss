@@ -1,0 +1,38 @@
+.ctregister_container {
+    background: #fdf0d596;
+}
+
+.ctregister_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+    &--text {
+        font-size: 3rem;
+        color: #003049;
+        font-weight: 600;
+    }
+}
+
+.ctregister_button {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 64px;
+    
+    a {
+        font-size: 22px;
+        padding: 12px 20px;
+        text-decoration: none;
+        transition: .2s ease-in-out;
+        border-radius: 10px;
+        background: #003049;
+        color: #fff;
+
+        &:hover {
+            background: #005d8f;
+        }
+    }
+}
