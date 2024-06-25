@@ -1,0 +1,40 @@
+.main_highlights {
+    text-align: center;
+    margin-top: 80px;
+
+    h2 {
+        font-size: 3.5rem;
+        color: #003049;
+    }
+
+    &--container {
+        display: flex;
+        gap: 100px;
+        justify-content: center;
+        align-items: center;
+        margin: 64px 0;
+    }
+
+    &--item {
+        max-width: 364px;
+        height: 270px;
+        padding: 42px;
+        color: #003049;
+
+        svg {
+            font-size: 64px;
+        }
+
+        &__title {
+            font-size: 2rem;
+            margin-top: 16px;
+            font-weight: 600;
+        }
+
+        &__text {
+            font-size: 14px;
+            margin-top: 12px;
+            font-weight: 300;
+        }
+    }
+}
