@@ -1,0 +1,37 @@
+footer {
+    background: #fdf0d596;
+    padding: 20px 60px;
+
+    .footer-row1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-col1 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: #003049;
+
+        img {
+            max-width: 220px;
+        }
+
+        p, a {
+            padding-left: 8px;
+        }
+
+        p {
+          font-size: 18px;
+          margin-top: 10px;
+          margin-bottom: 20px;
+        } 
+
+        a {
+            text-decoration: none;
+            color: #003049;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+    }
+}
