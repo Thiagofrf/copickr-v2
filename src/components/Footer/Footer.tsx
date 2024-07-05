@@ -17,7 +17,7 @@ const Footer = () => {
                 </div>
             </div>
             <hr />
-            <div className='footer-row1'>
+            <div className='footer-row2'>
                 <p>©2024 Feito por Thiago Fontanella</p>
             </div>
         </footer>

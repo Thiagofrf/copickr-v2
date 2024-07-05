@@ -1,6 +1,6 @@
 footer {
     background: #fdf0d596;
-    padding: 20px 60px;
+    padding: 20px 60px 0;
 
     .footer-row1 {
         display: flex;
@@ -33,5 +33,9 @@ footer {
             align-items: center;
             gap: 6px;
         }
+    }
+
+    .footer-row2 {
+        padding: 10px 0;
     }
 }
