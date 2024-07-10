@@ -3,6 +3,9 @@ import Header from './components/Header/Header';
 import HomePage from './pages/HomePage/HomePage';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
+import Dashboard from './pages/Dashboard/Dashboard';
+import Tutorial from './pages/Tutorial/Tutorial';
+import MyList from './pages/MyList/MyList';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -10,6 +13,9 @@ const router = createBrowserRouter(
       <Route index element={<HomePage />} />
       <Route path="login" element={<Login />} />
       <Route path="register" element={<Register />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/tutorials" element={<Tutorial />} />
+      <Route path="/list/:params" element={<MyList />} />
     </Route>
   )
 )
