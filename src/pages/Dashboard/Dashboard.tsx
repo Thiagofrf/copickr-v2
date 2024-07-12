@@ -4,6 +4,40 @@ import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
 import CreateListModal from '../../components/CreateListModal/CreateListModal';
 import Empty from '../../assets/empty-list.png';
 import './Dashboard.scss'
+import { Link } from 'react-router-dom';
+
+const lists = [
+    {
+        listName: 'Encontro de 2 anos',
+        listCategory: 'Restaurantes',
+        collabUsers: [
+            "Beatriz", "Andresa", "Gustavo", "Ganley"
+        ],
+        listUrl: '#'
+    },
+    {
+        listName: 'Filmes para assistir',
+        listCategory: 'Filmes',
+        collabUsers: [
+            "Beatriz"
+        ],
+        listUrl: '#'
+    },
+    {
+        listName: 'Próximos destinos',
+        listCategory: 'Lugares',
+        collabUsers: [
+            "Beatriz", "Andresa", "Gustavo", "Vinicius"
+        ],
+        listUrl: '#'
+    },
+    {
+        listName: 'Ferramentas úteis para desenvolvimento',
+        listCategory: 'Lista personalizada',
+        collabUsers: [],
+        listUrl: '#'
+    }
+]
 
 const Dashboard = () => {
     return (
@@ -22,118 +56,35 @@ const Dashboard = () => {
                         </span>
                     </a>
                     <div className="dashboard-lists__container">
-                        <div className="dashboard-lists__item">
-                            <div className="dashboard-lists__item--tags">
-                                <p>Nome da lista</p>
-                                <p>Categoria da lista</p>
-                            </div>
-                            <div className="dashboard-lists__item--collabs">
-                                <div>
-                                    <p>
-                                        U
-                                    </p>
-                                    <p>
-                                        S
-                                    </p>
-                                    <p>
-                                        E
-                                    </p>
-                                    <p>
-                                        R
-                                    </p>
-                                    <p>
-                                        S
-                                    </p>
+                        {lists.map((item: any, index: number) => {
+                            return (
+                            <div className="dashboard-lists__item" key={index}>
+                                <div className="dashboard-lists__item--tags">
+                                    <p>{item.listName}</p>
+                                    <p>{item.listCategory}</p>
+                                </div>
+                                <div className='dashboard-lists__item--row'>
+                                    <div className="dashboard-lists__item--collabs">
+                                        <div>
+                                            {item.collabUsers.map((user: string, index: number) => {
+                                                return (
+                                                    <p key={index}>
+                                                        {user.charAt(0)}
+                                                    </p>
+                                                )
+                                            })}
+                                        </div>
+                                    </div>
+                                    <Link 
+                                        to={item.listUrl}
+                                        className="dashboard-lists__item--link"
+                                    >
+                                        Acessar <ChevronRightOutlinedIcon />
+                                    </Link>
                                 </div>
                             </div>
-                            <button className="dashboard-lists__item--link">
-                                Acessar <ChevronRightOutlinedIcon />
-                            </button>
-                        </div>
-                        <div className="dashboard-lists__item">
-                            <div className="dashboard-lists__item--tags">
-                                <p>Nome da lista</p>
-                                <p>Categoria da lista</p>
-                            </div>
-                            <div className="dashboard-lists__item--collabs">
-                                <div>
-                                    <p>
-                                        U
-                                    </p>
-                                    <p>
-                                        S
-                                    </p>
-                                    <p>
-                                        E
-                                    </p>
-                                    <p>
-                                        R
-                                    </p>
-                                    <p>
-                                        S
-                                    </p>
-                                </div>
-                            </div>
-                            <button className="dashboard-lists__item--link">
-                                Acessar <ChevronRightOutlinedIcon />
-                            </button>
-                        </div>
-                        <div className="dashboard-lists__item">
-                            <div className="dashboard-lists__item--tags">
-                                <p>Nome da lista</p>
-                                <p>Categoria da lista</p>
-                            </div>
-                            <div className="dashboard-lists__item--collabs">
-                                <div>
-                                    <p>
-                                        U
-                                    </p>
-                                    <p>
-                                        S
-                                    </p>
-                                    <p>
-                                        E
-                                    </p>
-                                    <p>
-                                        R
-                                    </p>
-                                    <p>
-                                        S
-                                    </p>
-                                </div>
-                            </div>
-                            <button className="dashboard-lists__item--link">
-                                Acessar <ChevronRightOutlinedIcon />
-                            </button>
-                        </div>
-                        <div className="dashboard-lists__item">
-                            <div className="dashboard-lists__item--tags">
-                                <p>Nome da lista</p>
-                                <p>Categoria da lista</p>
-                            </div>
-                            <div className="dashboard-lists__item--collabs">
-                                <div>
-                                    <p>
-                                        U
-                                    </p>
-                                    <p>
-                                        S
-                                    </p>
-                                    <p>
-                                        E
-                                    </p>
-                                    <p>
-                                        R
-                                    </p>
-                                    <p>
-                                        S
-                                    </p>
-                                </div>
-                            </div>
-                            <button className="dashboard-lists__item--link">
-                                Acessar <ChevronRightOutlinedIcon />
-                            </button>
-                        </div>
+                            )
+                        })}
                     </div>
                 </div>
                 <div className="dashboard-create">
