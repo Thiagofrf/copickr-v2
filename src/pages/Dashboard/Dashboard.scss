@@ -47,9 +47,11 @@
             box-shadow: 0px 4px 12px -4px rgba(0,0,0,0.75);
             border-radius: 5px;
             padding: 10px 15px;
+            height: 140px;
             
             display: flex;
             flex-direction: column;
+            justify-content: space-around;
 
             &--tags {
                 display: flex;
@@ -114,6 +116,37 @@
                     cursor: pointer;
                     border: 1px solid #C1121F;
                 }
+            }
+        }
+    }
+
+    &-create {
+        margin-top: 40px;
+
+        button {
+            width: 420px;
+            background: #fff;
+            border: none;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            font-size: 16px;
+            margin-top: 24px;
+            border-radius: 10px;
+            color: #C1121F;
+            font-weight: 600;
+            -webkit-box-shadow: 10px 13px 17px -14px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 13px 17px -14px rgba(0,0,0,0.75);
+            box-shadow: 10px 13px 17px -14px rgba(0,0,0,0.75);
+            transition: .3s ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                -webkit-box-shadow: 10px 13px 40px -17px rgba(0,0,0,0.75);
+                -moz-box-shadow: 10px 13px 40px -17px rgba(0,0,0,0.75);
+                box-shadow: 10px 13px 40px -17px rgba(0,0,0,0.75);
             }
         }
     }
