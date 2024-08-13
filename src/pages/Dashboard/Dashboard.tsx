@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import ArrowDownwardOutlinedIcon from '@mui/icons-material/ArrowDownwardOutlined';
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
@@ -39,6 +40,12 @@ const lists = [
 ]
 
 const Dashboard = () => {
+    const [exhibition, setExhibition] = useState('hide')
+
+    const closeModal = () => {
+        setExhibition('hide')
+    }
+
     return (
         <>
             <div className="dashboard">
@@ -93,14 +100,17 @@ const Dashboard = () => {
                     }
                 </div>
                 <div className="dashboard-create">
-                    <button>
+                    <button onClick={() => setExhibition('')}>
                         Crie uma lista agora <AddOutlinedIcon />
                     </button>
                 </div>
             </div>
 
 
-            <CreateListModal />
+            <CreateListModal 
+                exhibition={exhibition}
+                closeModal={closeModal}
+            />
         </>
     )
 }
