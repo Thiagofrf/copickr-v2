@@ -1,4 +1,3 @@
-import './Highlights.scss'
 import ThumbUpOffAltOutlinedIcon from '@mui/icons-material/ThumbUpOffAltOutlined';
 import ShuffleOutlinedIcon from '@mui/icons-material/ShuffleOutlined';
 import TableChartOutlinedIcon from '@mui/icons-material/TableChartOutlined';

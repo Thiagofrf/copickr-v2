@@ -1,5 +1,3 @@
-import './CreateListModal.scss';
-
 const CreateListModal = () => {
     return (
         <>

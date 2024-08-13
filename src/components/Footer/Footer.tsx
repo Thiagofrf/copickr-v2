@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import Logo from '../../assets/CoPickr-logo.png'
 import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
-import './Footer.scss'
 
 const Footer = () => {
     return (

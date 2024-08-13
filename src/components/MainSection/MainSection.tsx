@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import CollabImg from '../../assets/colab_team.png'
-import './MainSection.scss'
 
 const MainSection = () => {
     return (

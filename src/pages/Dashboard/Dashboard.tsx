@@ -3,7 +3,6 @@ import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
 import CreateListModal from '../../components/CreateListModal/CreateListModal';
 import Empty from '../../assets/empty-list.png';
-import './Dashboard.scss'
 import { Link } from 'react-router-dom';
 
 const lists = [

@@ -1,4 +1,3 @@
-import './CallToRegister.scss'
 import MovieNight from '../../assets/movie-night.png'
 import { Link } from 'react-router-dom'
 

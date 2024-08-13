@@ -1,6 +1,5 @@
 import Logo from '../../assets/CoPickr-logo.png'
 import { Outlet, Link } from 'react-router-dom'
-import './Header.scss'
 
 const Header = () => {
     return (

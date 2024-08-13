@@ -6,6 +6,7 @@ import Register from './pages/Register/Register';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Tutorial from './pages/Tutorial/Tutorial';
 import MyList from './pages/MyList/MyList';
+import './sass/style.scss'
 
 const router = createBrowserRouter(
   createRoutesFromElements(

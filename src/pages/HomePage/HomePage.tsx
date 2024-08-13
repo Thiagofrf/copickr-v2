@@ -1,4 +1,3 @@
-// import './HomePage.scss'
 import CallToRegister from "../../components/CallToRegister/CallToRegister";
 import Footer from "../../components/Footer/Footer";
 import Highlights from "../../components/Highlights/Highligths";
