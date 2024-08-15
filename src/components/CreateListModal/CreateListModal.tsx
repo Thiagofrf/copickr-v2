@@ -50,7 +50,13 @@ const CreateListModal = (props: Props) => {
                                 <input type="text" placeholder="Ex: Visitar Barcelona" />
                             </label>
                         </fieldset>
-                        <button className="create-modal__content--submit">
+                        <button 
+                            className="create-modal__content--submit"
+                            onClick={(event) => {
+                                event?.preventDefault();
+                                window?.location?.replace('/list/123')
+                            }}
+                        >
                             Iniciar minha lista
                         </button>
                     </form>

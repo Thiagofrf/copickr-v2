@@ -58,7 +58,7 @@ const Dashboard = () => {
                                     <div className="dashboard-lists__item" key={index}>
                                         <div className="dashboard-lists__item--collabs">
                                             <div>
-                                                {item.collabUsers.map((user: string, index: number) => {
+                                                {item.collabUsers.map((user: string, index: number) => { // COMPONENTIZAR ISSO
                                                     return (
                                                         <p key={index}>
                                                             {user.charAt(0)}
