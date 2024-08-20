@@ -1,42 +1,40 @@
-import React, { useState } from 'react'
-import ArrowDownwardOutlinedIcon from '@mui/icons-material/ArrowDownwardOutlined';
+import { useState } from 'react'
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
 import CreateListModal from '../../components/CreateListModal/CreateListModal';
-import Empty from '../../assets/empty-list.png';
 import { Link } from 'react-router-dom';
 
 const lists = [
-    {
-        listName: 'Encontro de 2 anos',
-        listCategory: 'Restaurantes',
-        collabUsers: [
-            "Beatriz", "Andresa", "Gustavo", "Ganley"
-        ],
-        listUrl: '#'
-    },
-    {
-        listName: 'Filmes para assistir',
-        listCategory: 'Filmes',
-        collabUsers: [
-            "Beatriz"
-        ],
-        listUrl: '#'
-    },
-    {
-        listName: 'Próximos destinos',
-        listCategory: 'Lugares',
-        collabUsers: [
-            "Beatriz", "Andresa", "Gustavo", "Vinicius"
-        ],
-        listUrl: '#'
-    },
-    {
-        listName: 'Ferramentas úteis para desenvolvimento',
-        listCategory: 'Lista personalizada',
-        collabUsers: [],
-        listUrl: '#'
-    }
+    // {
+    //     listName: 'Encontro de 2 anos',
+    //     listCategory: 'Restaurantes',
+    //     collabUsers: [
+    //         "Beatriz", "Andresa", "Gustavo", "Ganley"
+    //     ],
+    //     listUrl: '#'
+    // },
+    // {
+    //     listName: 'Filmes para assistir',
+    //     listCategory: 'Filmes',
+    //     collabUsers: [
+    //         "Beatriz"
+    //     ],
+    //     listUrl: '#'
+    // },
+    // {
+    //     listName: 'Próximos destinos',
+    //     listCategory: 'Lugares',
+    //     collabUsers: [
+    //         "Beatriz", "Andresa", "Gustavo", "Vinicius"
+    //     ],
+    //     listUrl: '#'
+    // },
+    // {
+    //     listName: 'Ferramentas úteis para desenvolvimento',
+    //     listCategory: 'Lista personalizada',
+    //     collabUsers: [],
+    //     listUrl: '#'
+    // }
 ]
 
 const Dashboard = () => {
@@ -87,15 +85,8 @@ const Dashboard = () => {
                         :
                         <>
                             <div className="dashboard-lists__not-found">
-                                <img src={Empty} alt="Ilustração vetorizada de um garoto mostrando um papel vazio" />
                                 <p>Você não tem nenhuma lista criada</p>
                             </div>
-                            <a href="#">
-                                Crie uma lista agora
-                                <span>
-                                    <ArrowDownwardOutlinedIcon />
-                                </span>
-                            </a>
                         </>
                     }
                 </div>

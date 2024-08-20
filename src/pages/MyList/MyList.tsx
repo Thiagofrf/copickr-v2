@@ -52,7 +52,7 @@ const MyList = () => {
                                 <td>
                                     Alameda Lorena, 1040 - Jardim Paulista, São Paulo - SP, 01424-004
                                 </td>
-                                <td>
+                                <td className='my-list__content--price'>
                                     <AttachMoneyOutlinedIcon />
                                     <AttachMoneyOutlinedIcon />
                                     <AttachMoneyOutlinedIcon />
@@ -72,7 +72,7 @@ const MyList = () => {
                                 <td>
                                     Alameda Lorena, 1040 - Jardim Paulista, São Paulo - SP, 01424-004
                                 </td>
-                                <td>
+                                <td className='my-list__content--price'>
                                     <AttachMoneyOutlinedIcon />
                                     <AttachMoneyOutlinedIcon />
                                     <AttachMoneyOutlinedIcon />
@@ -92,7 +92,7 @@ const MyList = () => {
                                 <td>
                                     Alameda Lorena, 1040 - Jardim Paulista, São Paulo - SP, 01424-004
                                 </td>
-                                <td>
+                                <td className='my-list__content--price'>
                                     <AttachMoneyOutlinedIcon />
                                     <AttachMoneyOutlinedIcon />
                                     <AttachMoneyOutlinedIcon />

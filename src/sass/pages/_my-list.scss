@@ -26,6 +26,7 @@
                 font-size: 16px;
                 font-weight: 700;
                 color: #fff;
+                pointer-events: none;
                 
                 &:not(:first-child) {
                     margin-left: -5px;
@@ -57,6 +58,24 @@
                 }
             }
         }
+
+        &--price {
+           color: #40c16752; 
+           
+           &.active {
+               color: #40c167;
+            }
+            
+            svg {
+               transition: .2s ease-in-out;
+
+                &:hover {
+                    color: #40c167;
+                    cursor: pointer;
+                }
+           }
+
+        }
     }
 
     &__footer {
@@ -68,6 +87,21 @@
         }
 
         button {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 14px 16px;
+            border-radius: 4px;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            -webkit-box-shadow: 0px 0px 5px -4px rgba(0,0,0,0.45);
+            -moz-box-shadow: 0px 0px 5px -4px rgba(0,0,0,0.45);
+            box-shadow: 0px 0px 5px -4px rgba(0,0,0,0.45);
+            transition: .2s ease-in-out;
+            
             &.c-success {
                 background: #3742FA;
 
@@ -83,21 +117,6 @@
                     background: #fa3737b4;
                 }
             }
-
-            color: #fff;
-            font-size: 14px;
-            font-weight: 600;
-            padding: 14px 16px;
-            border-radius: 4px;
-            border: none;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 8px;
-            -webkit-box-shadow: 0px 0px 5px -4px rgba(0,0,0,0.45);
-            -moz-box-shadow: 0px 0px 5px -4px rgba(0,0,0,0.45);
-            box-shadow: 0px 0px 5px -4px rgba(0,0,0,0.45);
-            transition: .2s ease-in-out;
 
             &:hover {
                 cursor: pointer;
