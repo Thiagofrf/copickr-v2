@@ -7,17 +7,17 @@ const CallToRegister = () => {
             <div className="ctregister_content">
                 <div className="ctregister_content--text">
                     <p>
-                        Descomplique suas escolhas.
+                        Make it easy.
                     </p>
                     <p>
-                        Aproveite os momentos.
+                        Create your account and start managing your choices today!
                     </p>
                 </div>
                 <img src={MovieNight} alt="Ilustração vetorizada de um casal assistindo um filme" />
             </div>
             <div className='ctregister_button'>
                 <Link to="/register">
-                    Comece a usar agora
+                    Start your free trial
                 </Link>
             </div>
         </div>
